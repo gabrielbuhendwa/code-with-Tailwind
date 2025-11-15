@@ -14,3 +14,8 @@
     }
 }
 
+@layer components{
+    .menu-item {
+        @apply relative flex items-center justify-center px-4 h-full font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-all;
+    }
+}
