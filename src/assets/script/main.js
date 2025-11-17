@@ -18,4 +18,17 @@ window.onload = () => {
             ticketsMenuItem.classList.add("open");
         }
     });
+
+
+//const previousButton = document.getElementById("previous");
+    const nextButton = document.getElementById("next");
+    const carousel = document.getElementById("carousel");
+    previousButton.addEventListener("click", () => {
+        const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+        carousel.scrollLeft = carousel.scrollLeft - itemWidth;
+    });
+    nextButton.addEventListener("click", () => {
+        const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+        carousel.scrollLeft = carousel.scrollLeft + itemWidth;
+    });    
 };
